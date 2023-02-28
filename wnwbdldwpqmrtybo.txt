@@ -1,0 +1,27 @@
+<!doctype html><html class=dark lang=en><head><meta charset=utf-8><title>Kernal</title><meta name=description content="Kernal is a small funny, friendly and talented community of „hackers“ or other weirdos. And this is our official blog coming from our darkest and dankest headquarters…"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.80.0"><script src=/js/theme-switcher.min.34d656a41e6982e5f115226c24f3a4a5f073f279083fab84afb4cd86a8acfcad.js></script><link rel=stylesheet href=/css/bundle.min.3f83e2b1675c5bad206f48220d2dbf3db687da014ea2a940598b863a1e103d80.css></head><body><div class=container><div class=header><ul><li class=home><a href=https://kernal.eu/>kernal</a></li><li onclick=switchTheme()>theme</li><li><a href=/about/>about</a></li><li><a href=/services/>services</a></li></ul></div><div class=content><p>Welcome to the darkest dungeon of Kernal.</p><ul class=list><li><span>Nima Fanniasl - 2022-09-03</span>
+<a href=/posts/restoring-imei/>My IMEI is dead - Restoring my IMEI</a></li><li><span>Siren - 2022-07-24</span>
+<a href=/posts/go-migrations/>How to write database migrations for Go</a></li><li><span>Satya Nutella - 2022-05-26</span>
+<a href=/posts/linuxfx-part-2/>Linuxfx: Revenge of the Skids</a></li><li><span>Satya Nutella - 2022-05-23</span>
+<a href=/posts/linuxfx/>Dumping Linuxfx customers - A Windows-like distro including the spyware and activation</a></li><li><span>Siren - 2022-01-28</span>
+<a href=/posts/listen-on-multiple-sockets/>Listening on multiple ports using select() in C</a></li><li><span>Siren - 2021-12-19</span>
+<a href=/posts/payments-via-moneropay/>Accepting Monero (XMR) payments using MoneroPay</a></li><li><span>Siren - 2021-09-14</span>
+<a href=/posts/migrate-synapse/>Migrating a Matrix server (Synapse)</a></li><li><span>Siren - 2021-03-14</span>
+<a href=/posts/hacking-province-laravel/>Hacking a province in Turkey through Laravel</a></li><li><span>Stnby - 2021-03-13</span>
+<a href=/posts/improper-access-control-lithuanian-health-insurance-fund/>Improper Access Control (National Health Insurance Fund in Lithuania)</a></li><li><span>Cu64 - 2021-02-18</span>
+<a href=/posts/public-aws-s3-buckets/>Public Amazon S3 Buckets and the risk of data leakage</a></li><li><span>Stnby - 2021-02-16</span>
+<a href=/posts/citybee-leak/>Behind the scenes of CityBee customer data leak</a></li><li><span>Stnby - 2021-02-01</span>
+<a href=/posts/tele2-phone-number-leak/>Tele2 is leaking our phone numbers (Lithuania)</a></li><li><span>Stnby - 2021-01-10</span>
+<a href=/posts/hacking-vnc-vms/>Rooting VNC Virtual Machines (or reseting forgotten pass for your own PC)</a></li><li><span>Stnby - 2021-01-10</span>
+<a href=/posts/perfect-movie-watching-experience/>Perfect movie watching experience (syncplay, qbittorent-nox, nginx)</a></li><li><span>Stnby - 2021-01-08</span>
+<a href=/posts/configure-mime-applications/>Configure XDG MIME applications</a></li><li><span>Siren - 2021-01-07</span>
+<a href=/posts/turk-citizenship-db/>Turkish Citizenship Database v2 (Kids Edition)</a></li><li><span>Kernal - 2020-12-31</span>
+<a href=/posts/happy-new-year-2021/>Happy New Year 2021</a></li><li><span>Stnby - 2020-08-24</span>
+<a href=/posts/kcraft-minecraft-launcher/>kCraft - Minecraft Launcher (POSIX Shell)</a></li><li><span>Stnby - 2020-08-21</span>
+<a href=/posts/ssh-over-websocket/>Proxy SSH server over WebSocket and Cloudflare</a></li><li><span>Stnby - 2020-08-20</span>
+<a href=/posts/alpinedroid/>Alpine chroot jail on Android</a></li><li><span>Stnby - 2020-06-22</span>
+<a href=/posts/customdistrokvmvps/>Installing custom distros on KVM VPS's (suicide method)</a></li><li><span>Stnby - 2020-05-27</span>
+<a href=/posts/vuctflab/>Simple VU Capture The Flag lab</a></li><li><span>Siren - 2020-05-24</span>
+<a href=/posts/socketcurses/>Drawing ncurses on remote terminals</a></li><li><span>BeeJumKarray - 2020-05-22</span>
+<a href=/posts/mujeebdeosf/>Deobfuscating self proclaimed Termux Haxx0r's 'tools'</a></li><li><span>Siren - 2019-10-18</span>
+<a href=/posts/ghetto-pi/>A very ghetto Raspberry Pi setup</a></li><li><span>Kernal - 2019-06-25</span>
+<a href=/posts/birthday/>1 year on telegram</a></li></ul></div></div></body></html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="abuseipdb-verification" content="5VXmnVN5" />
+    <script data-ad-client="ca-pub-5851067013479320" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="Hi, I am Hoek. In the past, &quot;that IT guy&quot; from the basement of your company and then Ediscovery Engineer and then IT Security Officer and then Cyber Security Consultant (damn, who I wasn&#39;t to). Now pe">
+<meta property="og:type" content="website">
+<meta property="og:title" content="0ut3r Space">
+<meta property="og:url" content="http://0ut3r.space/index.html">
+<meta property="og:site_name" content="0ut3r Space">
+<meta property="og:description" content="Hi, I am Hoek. In the past, &quot;that IT guy&quot; from the basement of your company and then Ediscovery Engineer and then IT Security Officer and then Cyber Security Consultant (damn, who I wasn&#39;t to). Now pe">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="hoek">
+<meta property="article:tag" content="IT, security, guides, hack, bounty hunter, osint, forensic, opsec, tor, privacy, anonymity, cryptocurrency, ethical hacking, vulnerability, pentesting, tools">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>0ut3r Space</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" relative="false" href="index.html.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="enable" title="0ut3r Space" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+    <div class="content index py4">
+        
+          <header id="header">
+  <a href="index.html">
+  
+    
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
+    
+  
+    <div id="title">
+      <h1>0ut3r Space</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="index.html">Home</a></li><!--
+   --><!--
+     --><li><a href="/archives/">Post</a></li><!--
+   --><!--
+     --><li><a href="/projects/">Projects</a></li><!--
+   --><!--
+     --><li><a href="/search/">Search</a></li><!--
+   --><!--
+     --><li><a href="/categories/">Category</a></li><!--
+   --><!--
+     --><li><a href="/tags/">Tag</a></li><!--
+   --><!--
+     --><li><a href="/atom.xml">Rss</a></li><!--
+   --><!--
+     --><li><a href="/donations/">$</a></li><!--
+   --><!--
+     --><li><a href="/tos/">Â§</a></li><!--
+   -->
+    </ul>
+  </div>
+</header>
+
+        
+        <section id="about">
+  
+    <p>Hi, I am Hoek. In the past, âthat IT guyâ from the basement of your company and then Ediscovery Engineer and then IT Security Officer and then Cyber Security Consultant (damn, who I wasnât to). Now penetration tester, bounty hunter, self-appointed gray hacker, fan of new technologies, but generally an ordinary man. Welcome in 0ut3r Space, my personal website full of interesting (I hope so) news, articles, guides and links. Everything about IT, side topics and those that interest me. I ran several different websites and projects in the network, some large ones, some small, but all dead due to lack of time. Now I have a few new (really?). I hope that they will live longer than a year! I will share with you my insights and knowledge on topics related to IT and beyond, from time to time. Enjoy reading and make some comments if you wish (if you dare!).</p>
+
+  
+  
+    <p>
+      Find me on
+      
+      
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://github.com/h0ek" aria-label="github">
+            <i class="fab fa-github"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://gitlab.com/h0ek" aria-label="gitlab">
+            <i class="fab fa-gitlab"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://www.reddit.com/user/h03k" aria-label="reddit">
+            <i class="fab fa-reddit"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://telegram.me/hoeczek" aria-label="telegram">
+            <i class="fab fa-telegram"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://hackerone.com/hoek" aria-label="hackerrank">
+            <i class="fab fa-hackerrank"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://www.hackthebox.eu/profile/136628" aria-label="hire-a-helper">
+            <i class="fab fa-hire-a-helper"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://alternativeto.net/user/hoek/" aria-label="adn">
+            <i class="fab fa-adn"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/user?id=h0ek" aria-label="hacker-news">
+            <i class="fab fa-hacker-news"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://steamcommunity.com/id/hoeczek/" aria-label="steam">
+            <i class="fab fa-steam"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://discord.gg/MtsDaXJ" aria-label="discord">
+            <i class="fab fa-discord"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://keybase.io/h03k/chat" aria-label="keybase">
+            <i class="fab fa-keybase"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://www.codecademy.com/profiles/hoeczek" aria-label="python">
+            <i class="fab fa-python"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="https://0ut3r.space/463F11042CB88DD89BBF87FFEFEF0A7AE1DE43BD.txt" aria-label="expeditedssl">
+            <i class="fab fa-expeditedssl"></i><!--
+      ---></a><!--
+    ---><!--
+    ---> and 
+        
+      
+        
+          <a class="icon" target="_blank" rel="noopener" href="mailto:hoek(at)tuta.io" aria-label="mail">
+            <i class="fas fa-envelope"></i><!--
+      ---></a>
+        <!--
+    --->.
+        
+      
+    </p>
+  
+</section>
+
+<section id="writing">
+  <span class="h1"><a href="/archives/">Latest posts</a></span>
+  
+  <ul class="post-list">
+    
+    
+      
+    
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2023-02-27T14:29:00.000Z" itemprop="datePublished">2023-02-27</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2023/02/27/healthy-hacker/">Healthy mind and body of hacker</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2023-01-29T17:13:00.000Z" itemprop="datePublished">2023-01-29</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2023/01/29/pentest-report-template/">Penetration test report template</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2022-12-31T10:44:00.000Z" itemprop="datePublished">2022-12-31</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2022/12/31/end-of-the/">End of the...</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2022-10-31T21:03:00.000Z" itemprop="datePublished">2022-10-31</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2022/10/31/security-roadmap/">Security Roadmap</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2022-09-30T18:45:00.000Z" itemprop="datePublished">2022-09-30</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2022/09/30/big-files-from-tor/">Downloading big files from Tor</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+    <span class="h1">Latest updates</span>
+    <ul class="post-list">
+      
+      
+        
+      
+      
+        <li class="post-item">
+          
+    <div class="meta">
+      
+        
+          <time datetime="2023-02-27T14:29:00.000Z" itemprop="datePublished">2023-02-27</time>
+        
+      
+    </div>
+
+
+          <span>
+    
+        <a class="" href="/2023/02/27/healthy-hacker/">Healthy mind and body of hacker</a>
+    
+
+
+</span>
+        </li>
+      
+        <li class="post-item">
+          
+    <div class="meta">
+      
+        
+          <time datetime="2018-12-10T15:51:10.000Z" itemprop="datePublished">2018-12-10</time>
+        
+      
+    </div>
+
+
+          <span>
+    
+        <a class="" href="/2018/12/10/crypto-exchange/">Crypto currency exchange with no trace</a>
+    
+
+
+</span>
+        </li>
+      
+        <li class="post-item">
+          
+    <div class="meta">
+      
+        
+          <time datetime="2019-11-14T11:22:00.000Z" itemprop="datePublished">2019-11-14</time>
+        
+      
+    </div>
+
+
+          <span>
+    
+        <a class="" href="/2019/11/14/onionlinks/">Onion Links</a>
+    
+
+
+</span>
+        </li>
+      
+        <li class="post-item">
+          
+    <div class="meta">
+      
+        
+          <time datetime="2023-01-29T17:13:00.000Z" itemprop="datePublished">2023-01-29</time>
+        
+      
+    </div>
+
+
+          <span>
+    
+        <a class="" href="/2023/01/29/pentest-report-template/">Penetration test report template</a>
+    
+
+
+</span>
+        </li>
+      
+        <li class="post-item">
+          
+    <div class="meta">
+      
+        
+          <time datetime="2022-12-31T10:44:00.000Z" itemprop="datePublished">2022-12-31</time>
+        
+      
+    </div>
+
+
+          <span>
+    
+        <a class="" href="/2022/12/31/end-of-the/">End of the...</a>
+    
+
+
+</span>
+        </li>
+      
+    </ul>
+  
+</section>
+
+
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+        hoek &copy;
+    
+    
+    2018-2023
+
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="index.html">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Post</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/atom.xml">Rss</a></li><!--
+     --><!--
+       --><li><a href="/donations/">$</a></li><!--
+     --><!--
+       --><li><a href="/tos/">Â§</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+
+<script src="js/main.js"></script>
+<script relative="false" src="index.html.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115081859-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-115081859-2');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+
+</body>
+</html>

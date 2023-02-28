@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+ 
+<html lang="en">
+ 
+
+
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>F-Droid - Free and Open Source Android App Repository</title>
+  <meta property="og:title" content="F-Droid - Free and Open Source Android App Repository">
+
+  
+
+  <meta name="description" content="F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.">
+  <meta property="og:description" content="F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.">
+
+  
+    <meta property="og:image" content="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png">
+  
+
+  <link rel="preload" href="/assets/roboto_ln5c7Pv79kCZw8EjInNILddDbwVxQmaVPE0sjunCivU=.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" as="style" href="/css/main.css"/>
+  <link rel="dns-prefetch" href="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/search"/>
+  <link rel="stylesheet" href="/css/main.css"/>
+  
+  <link rel="canonical" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/'/>
+  
+  <link rel="alternate" type="application/rss+xml" title="F-Droid - Free and Open Source Android App Repository" href="/feed.xml"/>
+
+  <link href="/en/osd.xml" rel="search" title="F-Droid" type="application/opensearchdescription+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon_ypJwtCrcixeH_qV6LdcMYk1anFIR9o-_ufR__1wNdJY=.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon_AfYQ36xPEzFjJiCTyBFVmfWkajkehilUd2geASywhxM=.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32_Dk3aeG3k_A20gYe5zAlPSBx_CEcpJaCI89K2X2z6CFY=.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16_7yyppfDSTAVyGb3ycHY84PYjHUwP96NKICAibLRpnXw=.png">
+  <link rel="manifest" href="/assets/site_J9OLInBmO2hLlutzRFC4mdstNJjL44B6NzBbT0ecmA0=.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab_jVj0QIYK2TEAcXlrhjrienjgRnccBVzvX22tYumPb9Q=.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon_yJPr4UNteJc-cseeq16P0Hvl1kDbJjTVYcj-KA6-_Fs=.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig_sI0d7L-NQ2rondQpLn2DRSqXxvj7iPI0-WPzXn-uLZA=.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="alternate" hreflang="bo" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/bo/'>
+  
+  <link rel="alternate" hreflang="en" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/en/'>
+  
+  <link rel="alternate" hreflang="de" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/de/'>
+  
+  <link rel="alternate" hreflang="es" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/es/'>
+  
+  <link rel="alternate" hreflang="fa" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/fa/'>
+  
+  <link rel="alternate" hreflang="fr" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/fr/'>
+  
+  <link rel="alternate" hreflang="he" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/he/'>
+  
+  <link rel="alternate" hreflang="hu" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/hu/'>
+  
+  <link rel="alternate" hreflang="id" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/id/'>
+  
+  <link rel="alternate" hreflang="is" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/is/'>
+  
+  <link rel="alternate" hreflang="it" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/it/'>
+  
+  <link rel="alternate" hreflang="ja" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/ja/'>
+  
+  <link rel="alternate" hreflang="ko" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/ko/'>
+  
+  <link rel="alternate" hreflang="pl" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/pl/'>
+  
+  <link rel="alternate" hreflang="pt" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/pt/'>
+  
+  <link rel="alternate" hreflang="pt-BR" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/pt_BR/'>
+  
+  <link rel="alternate" hreflang="ro" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/ro/'>
+  
+  <link rel="alternate" hreflang="ru" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/ru/'>
+  
+  <link rel="alternate" hreflang="sq" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/sq/'>
+  
+  <link rel="alternate" hreflang="tr" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/tr/'>
+  
+  <link rel="alternate" hreflang="uk" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/uk/'>
+  
+  <link rel="alternate" hreflang="zh-Hans" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/zh_Hans/'>
+  
+  <link rel="alternate" hreflang="zh-Hant" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/zh_Hant/'>
+  
+  <link rel="alternate" hreflang="x-default" href='http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/'>
+  </head>
+
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+
+  <a class="site-title" href="/en/">
+    <img src="/assets/fdroid-logo-text_S0MUfk_FsnAYL7n2MQye-34IoSNm6QM6xYjDnMqkufo=.svg" alt="F-Droid" />
+  </a>
+
+  <nav class="site-nav">
+    
+      
+        
+        
+          <a class="page-link " href="/en/packages/">Apps</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link" href="https://forum.f-droid.org">Forum</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/docs/">Docs</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/news/">News</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/issues/">Issues</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/contribute/">Contribute</a>
+        
+      
+    
+      
+        
+        
+          <a class="page-link " href="/en/about/">About</a>
+        
+      
+    
+  </nav>
+
+</header>
+
+
+      <div class="main-content with-sidebar">
+
+        <div class="article-area">
+          
+<h2>What is F-Droid?</h2>
+
+<p>F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.</p>
+
+<div class="download-and-screenshot">
+    <div class="download">
+        <div class="button">
+            <a id="fdroid-download" data-donate-link="/donate" class="material-button" href="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/F-Droid.apk">Download F-Droid</a>
+        </div>
+        <div class="gpg">
+            <a href="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/F-Droid.apk.asc">PGP Signature</a>
+        </div>
+        <div class="qr">
+            <img src="/assets/download-fdroid-qr_GxE-SXA6lmH3iEpOmU-lh1S4bQZis4xoQ2M_LzTWQF8=.png" />
+        </div>
+    </div>
+    <div class="screenshot">
+        <img src="/assets/phone-frame_CugdRqiuBcm9I48ZeNjWjha41afLF4ISL2R9QoRbCzo=.png" alt="F-Droid Android app screenshot" style="background: url('/assets/fdroid-screenshot-en.png') center center no-repeat; background-size: 78% auto" />
+    </div>
+</div>
+
+<script src="/assets/donate_JH0mCNwawhPK42f7esD5bhYNybwPzSBMKoUvyTlH-Gw=.js" async=""></script>
+
+
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-widget language">
+            
+
+
+
+<form action="/" method="get">
+
+  <select id="language-chooser-select" name="lang" autocomplete="off">
+    
+      <option value="bo" >
+        à½à½¼à½à¼à½¦à¾à½à¼
+      </option>
+    
+      <option value="en" selected="selected">
+        English
+      </option>
+    
+      <option value="de" >
+        Deutsch
+      </option>
+    
+      <option value="es" >
+        espaÃ±ol
+      </option>
+    
+      <option value="fa" >
+        ÙØ§Ø±Ø³Û
+      </option>
+    
+      <option value="fr" >
+        franÃ§ais
+      </option>
+    
+      <option value="he" >
+        ×¢××¨××ª
+      </option>
+    
+      <option value="hu" >
+        magyar
+      </option>
+    
+      <option value="id" >
+        Bahasa Indonesia
+      </option>
+    
+      <option value="is" >
+        Ã­slenska
+      </option>
+    
+      <option value="it" >
+        italiano
+      </option>
+    
+      <option value="ja" >
+        æ¥æ¬èª
+      </option>
+    
+      <option value="ko" >
+        íêµ­ì´
+      </option>
+    
+      <option value="pl" >
+        polski
+      </option>
+    
+      <option value="pt" >
+        portuguÃªs
+      </option>
+    
+      <option value="pt_BR" >
+        portuguÃªs do Brasil
+      </option>
+    
+      <option value="ro" >
+        romÃ¢nÄ
+      </option>
+    
+      <option value="ru" >
+        ÑÑÑÑÐºÐ¸Ð¹
+      </option>
+    
+      <option value="sq" >
+        shqip
+      </option>
+    
+      <option value="tr" >
+        TÃ¼rkÃ§e
+      </option>
+    
+      <option value="uk" >
+        ÑÐºÑÐ°ÑÐ½ÑÑÐºÐ°
+      </option>
+    
+      <option value="zh_Hans" >
+        ç®ä½ä¸­æ
+      </option>
+    
+      <option value="zh_Hant" >
+        ç¹é«ä¸­æ
+      </option>
+    
+  </select>
+
+  <script src="/assets/sidebar-lang_j4kvB8VghKUiWGs4HpqMvN0Ucx0tTmJ_lRfuoUmiaqc=.js" async></script>
+
+  <noscript>
+    <input id="language-chooser-submit" type="submit" value="Change" />
+  </noscript>
+
+</form>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Find Apps</h3>
+
+<div>
+  <form method="get" class="search-form" action="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/search/">
+    <div class="search-input-wrp">
+      <input type="search" class="search-input" name="q">
+    </div>
+    <input type="hidden" name="lang" value="en">
+    <input type="submit" value="Search" class="material-button" />
+  </form>
+</div>
+
+          </div>
+
+          <div class="sidebar-widget">
+            
+            
+<h3 id="donate">Donate</h3>
+
+<p>F-Droid is powered by your donations!</p>
+
+<ul class="donate-options">
+  <li class="donate-option opencollective"><a href="https://opencollective.com/f-droid"><img src="/assets/opencollective_button_iIGF0Hixdj0EaYR3Sd7FRigTVcl7QPGu6kaoBmXHjZI=.png" alt="Donate to our Collective" /></a></li>
+  <li class="donate-option liberapay"><a href="https://liberapay.com/F-Droid-Data/donate"><img src="/assets/liberapay_donate_button_GHdOOfmFJNeSXjfjnA-98XtIuEfvE6cNJjHgHOhjdv0=.svg" alt="Donate via Liberapay" /></a></li>
+  <li class="donate-option more"><a href="/en/donate">More Options</a></li>
+</ul>
+
+          </div>
+
+          <div class="sidebar-widget sidebar-hidden">
+            <h3> Connect </h3>
+
+<a class="connect-item" rel="me" href="https://floss.social/@fdroidorg">
+    <img class="connect-icon" src="/assets/mastodon_-c62Zo613I00cO-RavNTybrSJhBC3vZToN5u4zSoMdM=.svg" alt="mastodon" />
+    <div class="connect-label">@fdroidorg@floss.social</div>
+</a>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>News</h3>
+
+<ul class="post-list" dir="auto">
+  
+    <li>
+      <a class="post-link" href="/en/2023/02/09/donation-shift6mq.html">Donation SHIFT6mq</a>
+
+      <span class="post-meta">2023-02-09</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2023/01/15/towards-a-reproducible-fdroid.html">Towards a reproducible F-Droid</a>
+
+      <span class="post-meta">2023-01-15</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2022/12/22/third-audit-results.html">Third Audit Results</a>
+
+      <span class="post-meta">2022-12-22</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2022/12/18/unifiedpush.html">UnifiedPush: a decentralized, open-source push notification protocol</a>
+
+      <span class="post-meta">2022-12-18</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2022/12/15/update-to-app-descriptions.html">Update to app descriptions</a>
+
+      <span class="post-meta">2022-12-15</span>
+    </li>
+  
+</ul>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Last Updated</h3>
+
+
+
+
+
+<a class="package-header" href="/en/packages/threads.thor/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/threads.thor/en-US/icon_h529wR-N5X9khCqHqY3bSG-AQel7uSZNzBmL9YUQ0ws=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Thor - IPFS Lite
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">IPFS Lite and HTML browser</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/org.oxycblt.auxio/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/org.oxycblt.auxio/en-US/icon_jdRok4xNvWOD-mGXxk051-Y1DqArTANlpnrn5cmCk9k=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Auxio
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A simple, rational music player</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/me.timschneeberger.rootlessjamesdsp/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/me.timschneeberger.rootlessjamesdsp/en-US/icon_9-Qa3VJeySPsi6yjxTFXgnxeUZdGULSsF_gZwBdubik=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			RootlessJamesDSP
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">System-wide JamesDSP implementation for non-rooted devices</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Latest Apps</h3>
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/com.akshayaap.touchdroid/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/com.akshayaap.touchdroid/en-US/icon_T-1MDK2jBwukJS51f6JxI_chP0gg8jlSchdLAzDZ4go=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			TouchDroid
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Use your Android Device as Touchpad.</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/org.woheller69.omweather/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/org.woheller69.omweather/en-US/icon_iGJ04PUJ0w7OM12-UwH381NKOWCqGsMbTYkmNXGmdZs=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			omWeather
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">omWeather lets you watch the weather for cities and locations you are interested</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+<a class="package-header" href="/en/packages/in.sunilpaulmathew.ashell/">
+    
+	<img class="package-icon" src="http://fdroidorg6cooksyluodepej4erfctzk7rrjpjbbr6wx24jh3lqyfwyd.onion/repo/in.sunilpaulmathew.ashell/en-US/icon_92UrpIX5p0pVnAcdk-IjWqrw7gkA8B0lQeYT04iZpr4=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			aShell
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">aShell: A local ADB shell for Shizuku powered android devices</span>
+		</div>
+	</div>
+</a>
+
+
+
+
+
+
+
+
+<!-- no nice ones found, failing back to any -->
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-description">
+      <p>
+        Â© 2010-2022 F-Droid Limited and Contributors
+        <span class="version">
+          (F-Droid 2023-02-27, fdroid-website <a href="https://gitlab.com/fdroid/fdroid-website/tree/e973afce60">2.140</a>)
+        </span>
+	<span class="edit-this-page-area"><a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank">
+	    Edit on GitLab
+	  </a></span>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>
