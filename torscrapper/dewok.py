@@ -205,7 +205,8 @@ if __name__ == "__main__":
             print('[FINISH] ... TERMINATE THE PROCESSES')
     elif (options == '2') :
         depth = input('How deep you want to crawl : ')
-        url = "http://grqwuipwwfuu5mkyyqfea32kbkvwvxm36hau6bvkzoozchf57moj6yqd.onion" 
+        url = input('Your onion link (use http://) : ')
+        #url = "http://grqwuipwwfuu5mkyyqfea32kbkvwvxm36hau6bvkzoozchf57moj6yqd.onion" 
         torSearcherGreed(url, int(depth))
     elif (options == '3') :
         search = input('Your Search Query Here : ')
