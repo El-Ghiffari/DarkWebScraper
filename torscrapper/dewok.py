@@ -16,7 +16,7 @@ def gambar() :
     print("| |__/    |  |   _____/  |   |/.     .\|   |   ___   |       /           ")
     print("|        |  |   |         |                |  / _ \  |       \           ")
     print("|       |  |   |____       |   |\    /|   |  | (_) | |   |\   \          ")
-    print("|______|  |_________|      |___| \__/ |___|   \___/  |___| \___\ ____    ")
+    print("|______|  |_________|      |___| \__/ |___|   \___/  |___| \___\ _______ ")
     print("                                                                         ")
     print("      BY              _          ______      ___                         ")
     print("                     | |        |   _  \__  / _ \   __    _    _         ")
@@ -123,24 +123,33 @@ def scraping(url) :
         print('[ERROR] ... IT SEEMS WE CANNOT SCRAPE THE LINK ...')
 
 def Scraper(searchquery):
-    # This function are scraping onion links from ahmia.fi
+    # This function are scraping onion links from ahmia.fi and other search engines
+    contents = 'start here : \n'
     yourquery = searchquery
     if " " in yourquery:
         yourquery = yourquery.replace(" ","+")
     
-    url = "https://ahmia.fi/search/?q={}".format(yourquery) # we use ahmia.fi to gather onion links
-    print(url)
-
-    #Fake Agent gan awowkwowk
-    ua_list = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19577"
-    ,"Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36"
-    ,"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/44.0.2403.155 Safari/537.36", "Mozilla/5.0 (Linux; U; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13","Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27"
-    ,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; zh-cn) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27"]
-    ua = random.choice(ua_list)
-    headers = {'User-Agent': ua}
-
-    request = requests.get(url, headers=headers) #, verify=False)
-    content = request.text
+    # url = "https://ahmia.fi/search/?q={}".format(yourquery) # we use ahmia.fi to gather onion links
+    # print(url)
+    urls = ["http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/result.php?search={}",
+            "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q={}",
+            "http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q={}",
+            "http://oniondxjxs2mzjkbz7ldlflenh6huksestjsisc3usxht3wqgk6a62yd.onion/search?query={}",
+            "http://tordexu73joywapk2txdr54jed4imqledpcvcuf75qsas2gwdgksvnyd.onion/search?query={}"] #we use ahmia.fi and other search engines to gather onion links
+    for url in urls:
+        print("[INFO] ... Gathering Onion from : ", url.format(yourquery))
+        url = url.format(yourquery)
+        #Fake Agent gan awowkwowk
+        ua_list = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19577"
+        ,"Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36"
+        ,"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/44.0.2403.155 Safari/537.36", "Mozilla/5.0 (Linux; U; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13","Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27"
+        ,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; zh-cn) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27"]
+        ua = random.choice(ua_list)
+        headers = {'User-Agent': ua}
+        session = get_tor_session()
+        request = session.get(url, headers=headers) #, verify=False)
+        content = request.text
+        contents = contents + content
 
     def findlinks(content):
         #ambil content - webpage dalam string format - abis itu cari make regex
@@ -170,7 +179,7 @@ def Scraper(searchquery):
     if request.status_code == 200:
         print("Request went through. \n")
         #print(content)
-        mineddata = findlinks(content)
+        mineddata = findlinks(contents)
         return mineddata
     
 def scrapahmia(url) :
@@ -193,8 +202,12 @@ if __name__ == "__main__":
     print('[OPTION] #4 : Gather onion links based on your search Query and Scrap them')
     options = input('Your Options : ')
     if (options == '1') :
-        url = input('Your onion link (use http://) : ')
-        torSearcher(url)
+        url = input('Your onion link : ')
+        if 'http://' in url :
+            torSearcher(url)
+        else :
+            url = 'http://' + url
+            torSearcher(url)
         try :
             urlbaru = gettags(url)
             print('[INFO] ... INITIATE DEEP CRAWLING !!!')
@@ -205,9 +218,13 @@ if __name__ == "__main__":
             print('[FINISH] ... TERMINATE THE PROCESSES')
     elif (options == '2') :
         depth = input('How deep you want to crawl : ')
-        url = input('Your onion link (use http://) : ')
+        url = input('Your onion link : ')
+        if 'http://' in url :
+            torSearcherGreed(url, int(depth))
+        else :
+            url = 'http://' + url
+            torSearcherGreed(url, int(depth))
         #url = "http://grqwuipwwfuu5mkyyqfea32kbkvwvxm36hau6bvkzoozchf57moj6yqd.onion" 
-        torSearcherGreed(url, int(depth))
     elif (options == '3') :
         search = input('Your Search Query Here : ')
         onions = Scraper(search)
@@ -220,7 +237,7 @@ if __name__ == "__main__":
                 url = 'http://' + onion
                 scrapahmia(str(url))
             except :
-                print('The Onion Links Expired bruh...')
+                print('[INFO] The Onion Links Expired bruh...')
     else :
         print('[ERROR] ... Choose the Correct Options pleaseee...')
 
